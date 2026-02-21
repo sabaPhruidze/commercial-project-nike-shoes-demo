@@ -1,5 +1,5 @@
 import { motion } from "framer-motion";
-import { useState } from "react";
+import { useState, useEffect } from "react";
 import Button from "../components/Button";
 import ArrowRight from "../assets/icons/arrow-right.svg";
 import { statistics, Statistics, shoes, Shoes } from "../constants";
@@ -7,6 +7,12 @@ import bigShoe1 from "../assets/images/bigShoe1.png";
 import ShoeCard from "../components/ShoeCard";
 const Hero = () => {
   const [bigShoeImg, setBigShoeImg] = useState<string>(bigShoe1);
+  useEffect(() => {
+    shoes.forEach((s) => {
+      const img = new Image();
+      img.src = s.bigShoe;
+    });
+  }, []);
   const typingContainer = {
     hidden: {
       opacity: 0,
