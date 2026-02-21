@@ -11,7 +11,7 @@ import {
 import Nav from "./components/Nav";
 
 const App = () => (
-  <main className="relative">
+  <main className="relative overflow-y-hidden">
     <Nav />
     <section className="xl:padding-l wide:padding-r padding-b">
       <Hero />

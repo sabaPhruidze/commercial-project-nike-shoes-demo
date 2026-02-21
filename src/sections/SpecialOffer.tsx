@@ -5,7 +5,7 @@ import { motion } from "framer-motion";
 const SpecialOffer = () => {
   return (
     <section className="flex justify-center items-center max-xl:flex-col-reverse gap-10 max-container">
-      <div className="flex-1">
+      <div className="flex-1 overflow-hidden">
         <motion.img
           className="object-contain w-full cursor-pointer"
           src={offer}
