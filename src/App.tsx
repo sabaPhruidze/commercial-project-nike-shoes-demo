@@ -1,4 +1,4 @@
-import { Hero, Footer } from "./sections/index";
+import { Footer } from "./sections/index";
 import { type AppSection, APP_SECTIONS } from "./config/sectionsConfig";
 import Nav from "./components/Nav";
 
